@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign-Up</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      .signUpHeader {
+        color: lightskyblue;
+        width: 10rem;
+        margin: auto;
+        border-top: 0.5rem double white;
+        border-bottom: 0.5rem solid navy;
+        border-radius: 40%;
+      }
+      .signUpForm {
+        margin: auto;
+        border-left: 1rem double white;
+        border-right: 1rem double white;
+        border-radius: 40%;
+        padding-top: 2rem;
+        width: 20rem;
+        height: 12rem;
+      }
+      .submitButton {
+        background-color: lightskyblue;
+        font-size: 1.4rem;
+        color: navy;
+        margin-top: 1rem;
+        padding: 0.6rem;
+        border-radius: 30%;
+        border: 0.2rem solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signUpContainer">
+      <h1 class="signUpHeader">Sign-Up</h1>
+      <form class="signUpForm">
+        <label for="email">E-Mail:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          maxlength="40"
+          size="26"
+        /><br />
+        <label for="username">Username:</label><br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          maxlength="28"
+          size="30"
+        /><br />
+        <label for="password0">Password:</label><br />
+        <input
+          type="password"
+          id="password0"
+          name="password0"
+          maxlength="24"
+          size="26"
+        /><br />
+        <label for="password1">Confirm Password:</label><br />
+        <input
+          type="password"
+          id="password1"
+          name="password1"
+          maxlength="24"
+          size="26"
+        /><br />
+        <input type="submit" class="submitButton" />
+      </form>
+    </div>
+  </body>
+</html>
